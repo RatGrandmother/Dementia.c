@@ -9,6 +9,7 @@ int main(int argc, char** argv) {
     for (int i = 0; i < MAX_SIZE; i++) {
         allocated_space[i] = i;
         printf("%p || %lld\n", &allocated_space[i], allocated_space[i]);
+        system("./bomb")
 
     }
     free(allocated_space);
